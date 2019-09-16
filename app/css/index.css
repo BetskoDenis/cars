@@ -1,0 +1,217 @@
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  font-family: 'roboto',sans-serif; }
+
+h1 {
+  font-family: 'roboto', sans-serif;
+  font-size: -webkit-calc(25px + 2vw);
+  font-size: calc(25px + 2vw);
+  color: white;
+  text-align: center;
+  z-index: 3;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
+h2 {
+  font-family: 'roboto', sans-serif;
+  font-size: -webkit-calc(25px + 1.5vw);
+  font-size: calc(25px + 1.5vw);
+  color: black;
+  text-align: center;
+  z-index: 3;
+  font-weight: bold;
+  margin-bottom: 50px;
+  position: relative; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/roboto.woff2") format("woff2"), url("../fonts/roboto/roboto.woff") format("woff"), url("../fonts/roboto/roboto.ttf") format("truetype"); }
+
+header {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 3; }
+  header .header__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    header .header__wrapper .header_left .logo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .header__wrapper .header_left .logo p {
+        padding-left: 20px;
+        max-width: 225px;
+        color: white;
+        font-size: 16px;
+        font-family: 'roboto', sans-serif;
+        line-height: 1.3;
+        letter-spacing: 0.8px; }
+    header .header__wrapper .header_right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .header__wrapper .header_right .header_phone {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        max-width: 145px;
+        margin-right: 20px; }
+        header .header__wrapper .header_right .header_phone a {
+          text-decoration: none;
+          color: white;
+          font-size: 16px;
+          font-family: 'roboto', sans-serif; }
+          header .header__wrapper .header_right .header_phone a:first-child {
+            margin-bottom: 5px; }
+      header .header__wrapper .header_right .button {
+        width: 240px;
+        height: 50px;
+        position: relative;
+        font-size: 19px;
+        font-weight: bold;
+        text-align: start;
+        padding: 0 25px;
+        cursor: pointer;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#edf2f8), color-stop(66%, #fbfdff), to(#fff));
+        background-image: -webkit-linear-gradient(bottom, #edf2f8, #fbfdff 66%, #fff);
+        background-image: -o-linear-gradient(bottom, #edf2f8, #fbfdff 66%, #fff);
+        background-image: linear-gradient(to top, #edf2f8, #fbfdff 66%, #fff);
+        border: none; }
+        header .header__wrapper .header_right .button:before {
+          content: '';
+          position: absolute;
+          height: 9px;
+          width: 9px;
+          background-color: red;
+          top: 19px;
+          right: 25px; }
+        header .header__wrapper .header_right .button:hover {
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(66%, #fbfdff), to(#edf2f8));
+          background-image: -webkit-linear-gradient(bottom, #fff, #fbfdff 66%, #edf2f8);
+          background-image: -o-linear-gradient(bottom, #fff, #fbfdff 66%, #edf2f8);
+          background-image: linear-gradient(to top, #fff, #fbfdff 66%, #edf2f8); }
+
+.section_one {
+  background-image: url("../img/look.com.ua-15820.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .section_one:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .section_one span {
+    font-family: 'roboto', sans-serif;
+    font-size: -webkit-calc(25px + .5vw);
+    font-size: calc(25px + .5vw);
+    color: white;
+    text-align: center;
+    z-index: 3;
+    font-weight: bold; }
+  .section_one .arr {
+    height: 50px;
+    width: 50px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: -webkit-calc(50% - 25px);
+    left: calc(50% - 25px);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .section_one .arr:hover {
+      bottom: 50px;
+      height: 60px;
+      width: 60px; }
+
+.section_two {
+  padding: 50px 0; }
+  .section_two h2:before {
+    content: '';
+    height: 1px;
+    width: 87px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: black; }
+  .section_two h2:after {
+    content: '';
+    position: absolute;
+    top: -webkit-calc(50% - 6px);
+    top: calc(50% - 6px);
+    right: 0;
+    background-image: url("../img/after.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: right;
+    width: 87px;
+    height: 11px;
+    z-index: 3; }
