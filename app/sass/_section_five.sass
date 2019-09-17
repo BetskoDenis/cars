@@ -1,0 +1,23 @@
+.section_five
+  padding: 50px 0
+  background-color: rgba(220, 220, 220, 1)
+  h2
+    &:before
+      content: ''
+      height: 1px
+      width: 87px
+      position: absolute
+      top: 50%
+      left: 15%
+      background-color: rgba(40, 40, 40, 1)
+    &:after
+      content: ''
+      position: absolute
+      top: calc(50% - 6px)
+      right: 15%
+      background-image: url("../img/after.png")
+      background-size: cover
+      background-position: right
+      width: 87px
+      height: 11px
+      z-index: 3

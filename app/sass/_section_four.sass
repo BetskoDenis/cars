@@ -1,0 +1,124 @@
+.section_four
+  background-image: url("../img/about.jpg")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  padding: 80px 0
+  h2
+    color: rgba(240, 240, 240, 1)
+    &:before
+      content: ''
+      height: 1px
+      width: 87px
+      position: absolute
+      top: 50%
+      left: 20%
+      background-color: rgba(240, 240, 240, 1)
+    &:after
+      content: ''
+      position: absolute
+      top: calc(50% - 6px)
+      right: 20%
+      background-image: url("../img/after-2.png")
+      background-size: cover
+      background-position: right
+      width: 87px
+      height: 11px
+      z-index: 3
+  .about__wrapper
+    width: 1170px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .section_four_about
+      flex: 1 1 calc(50% - 50px)
+      min-width: 300px
+      position: relative
+    .section_four_about.left
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      position: relative
+      justify-content: center
+      margin-right: 50px
+      padding: 0 30px
+      .text__wrapper
+        position: relative
+        .line
+          height: 1px
+          position: absolute
+          top: 12px
+          right: 0
+          width: 40%
+          background-color: rgba(240, 240, 240, .2)
+        &:before
+          content: ""
+          position: absolute
+          background-image: url("../img/after-4.png")
+          background-repeat: no-repeat
+          top: 7px
+          left: -5%
+          height: 35px
+          width: 35px
+        &:after
+          content: ""
+          position: absolute
+          background-image: url("../img/after-4.png")
+          background-repeat: no-repeat
+          transform: rotate(-90deg)
+          bottom: -30px
+          left: -5%
+          height: 35px
+          width: 35px
+
+      h5
+        font-size: 25px
+        margin-bottom: 20px
+        text-indent: 30px
+      span
+        color: rgba(240, 240, 240, 1)
+        font-family: 'roboto', sans-serif
+        line-height: 1.8
+        font-size: 16px
+    .section_four_about.right
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      position: relative
+      padding: 0 20px
+
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-image: url("../img/team-bg.png")
+        background-repeat: no-repeat
+        background-position: center
+        z-index: 5
+
+      .about_right_item
+        display: flex
+        margin: 15px
+        figure
+          display: flex
+          flex-wrap: wrap
+          flex-direction: column
+          flex: 1 1 calc(50% - 60px)
+          align-items: center
+          img
+            height: 205px
+            width: 205px
+            object-fit: cover
+            margin-bottom: 30px
+          figcaption
+            color: rgba(240, 240, 240, 1)
+            font-family: 'roboto', sans-serif
+            font-size: 18px
+            margin-bottom: 10px
+          span
+            color: rgba(240, 240, 240, 1)
+            font-size: 15px
