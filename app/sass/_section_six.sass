@@ -1,0 +1,95 @@
+.section_six
+  background-image: url("../img/reviews.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  padding: 80px 0
+  h2
+    color: rgba(240, 240, 240, 1)
+    margin-bottom: 80px
+    &:before
+      content: ''
+      height: 1px
+      width: 87px
+      position: absolute
+      top: 50%
+      left: 10%
+      background-color: rgba(240, 240, 240, 1)
+    &:after
+      content: ''
+      position: absolute
+      top: calc(50% - 6px)
+      right: 10%
+      background-image: url("../img/after-2.png")
+      background-size: cover
+      background-position: right
+      width: 87px
+      height: 11px
+      z-index: 3
+  .carousel__wrapper
+    position: relative
+    .owl-nav
+      .owl-prev
+        height: 50px
+        width: 50px
+        border-top: 2px solid rgba(240, 240, 240, .5)
+        border-left: 2px solid rgba(240, 240, 240, .5)
+        transform: rotate(-45deg)
+        position: absolute
+        top: calc(50% - 25px)
+        outline: none
+        left: 13%
+        transition: all .3s
+        span
+          display: none
+        &:hover
+          border-top: 2px solid rgba(240, 240, 240, 1)
+          border-left: 2px solid rgba(240, 240, 240, 1)
+      .owl-next
+        height: 50px
+        width: 50px
+        border-top: 2px solid rgba(240, 240, 240, .5)
+        border-right: 2px solid rgba(240, 240, 240, .5)
+        transform: rotate(45deg)
+        position: absolute
+        top: calc(50% - 25px)
+        right: -2%
+        outline: none
+        transition: all .3s
+        span
+          display: none
+        &:hover
+          border-top: 2px solid rgba(240, 240, 240, 1)
+          border-right: 2px solid rgba(240, 240, 240, 1)
+
+    .carousel_item
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      .img_container
+        flex: 1 1 320px
+        display: flex
+        justify-content: flex-end
+        img
+          height: 400px
+          width: 369px
+          object-fit: cover
+
+      .review_info
+        flex: 1 1 320px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: center
+        color: rgba(240, 240, 240, 1)
+        padding: 0 40px
+        span
+          font-family: 'roboto', sans-serif
+          font-size: 20px
+          font-weight: bold
+          margin-bottom: 20px
+        p
+          font-family: 'roboto', sans-serif
+          font-size: 16px
+          margin-bottom: 20px
+          line-height: 1.6

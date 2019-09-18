@@ -212,9 +212,17 @@
         font-weight: bold
         box-shadow: 0 20px 30px -15px #eb3e62
         transition: all .3s
+        position: relative
         &:hover
           box-shadow: none
-
+        &:after
+          content: ""
+          position: absolute
+          top: calc(50% - 4px)
+          right: 10%
+          height: 9px
+          width: 9px
+          background-color: rgba(240, 240, 240, 1)
     &:before
       content: ''
       position: absolute

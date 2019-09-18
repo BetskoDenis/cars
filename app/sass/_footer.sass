@@ -1,0 +1,115 @@
+footer
+  background-image: url("../img/packages.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  padding: 80px 0
+  h2
+    margin-bottom: 80px
+    &:before
+      content: ''
+      height: 1px
+      width: 87px
+      position: absolute
+      top: 50%
+      left: 5%
+      background-color: rgba(40, 40, 40, 1)
+    &:after
+      content: ''
+      position: absolute
+      top: calc(50% - 6px)
+      right: 5%
+      background-image: url("../img/after.png")
+      background-size: cover
+      background-position: right
+      width: 87px
+      height: 11px
+      z-index: 3
+  .our_works__wrapper
+    display: flex
+    justify-content: center
+    position: relative
+    margin-bottom: 50px
+    .our_works_item
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      width: 320px
+      padding: 10px
+      align-items: center
+
+      img
+        height: 280px
+        width: 300px
+        object-fit: cover
+        margin-bottom: 20px
+        border-radius: 5px
+      figcaption
+        font-family: 'roboto', sans-serif
+        color: rgba(40, 40, 40, 1)
+        font-size: 18px
+        font-weight: bold
+        margin-bottom: 10px
+
+    .owl-nav
+      .owl-prev
+        height: 50px
+        width: 50px
+        border-top: 2px solid rgba(40, 40, 40, .5)
+        border-left: 2px solid rgba(40, 40, 40, .5)
+        transform: rotate(-45deg)
+        position: absolute
+        top: calc(50% - 25px)
+        outline: none
+        left: -9%
+        transition: all .3s
+        span
+          display: none
+        &:hover
+          border-top: 2px solid rgba(40, 40, 40, 1)
+          border-left: 2px solid rgba(40, 40, 40, 1)
+      .owl-next
+        height: 50px
+        width: 50px
+        border-top: 2px solid rgba(40, 40, 40, .5)
+        border-right: 2px solid rgba(40, 40, 40, .5)
+        transform: rotate(45deg)
+        position: absolute
+        top: calc(50% - 25px)
+        right: -2%
+        outline: none
+        transition: all .3s
+        span
+          display: none
+        &:hover
+          border-top: 2px solid rgba(40, 40, 40, 1)
+          border-right: 2px solid rgba(40, 40, 40, 1)
+  .button__wrapper
+    width: 100%
+    display: flex
+    justify-content: center
+    .form_button
+      width: 220px
+      height: 60px
+      padding: 10px 20px 10px 2px
+      border: none
+      background-image: linear-gradient(to top, #f93542, #fe4753)
+      cursor: pointer
+      font-family: 'roboto', sans-serif
+      color: rgba(255, 255, 255, 1)
+      font-size: 20px
+      font-weight: bold
+      box-shadow: 0 20px 30px -15px #eb3e62
+      transition: all .3s
+      position: relative
+      outline: none
+      &:after
+        content: ""
+        position: absolute
+        top: calc(50% - 4px)
+        right: 10%
+        height: 9px
+        width: 9px
+        background-color: rgba(240, 240, 240, 1)
+    .form_button:hover
+      box-shadow: none

@@ -1,0 +1,59 @@
+.section_seven
+  padding: 80px 0
+  background-image: url("../img/questions.jpg")
+  background-position: center
+  background-size: cover
+  h2
+    color: rgba(240, 240, 240, 1)
+    margin-bottom: 80px
+    &:before
+      content: ''
+      height: 1px
+      width: 87px
+      position: absolute
+      top: 50%
+      left: 10%
+      background-color: rgba(240, 240, 240, 1)
+    &:after
+      content: ''
+      position: absolute
+      top: calc(50% - 6px)
+      right: 10%
+      background-image: url("../img/after-2.png")
+      background-size: cover
+      background-position: right
+      width: 87px
+      height: 11px
+      z-index: 3
+  .accordion-menu
+    li
+      .dropdownlink
+        color: rgba(240, 240, 240, 1)
+        font-size: 20px
+        padding: 25px 100px 25px 100px
+        transition: all .3s
+        &:after
+          content: ""
+          position: absolute
+          height: 40px
+          width: 40px
+          top: calc(50% - 20px)
+          left: 5%
+          background-image: url("../img/active-1.png")
+          background-repeat: no-repeat
+        &:hover
+          background-image: url("../img/accordion-bg-3.png")
+      .dropdownlink:hover
+        &:after
+          background-image: url("../img/active-2.png")
+      .submenuItems
+        margin-left: 100px
+        justify-content: center
+        p
+          border-bottom-left-radius: 10px
+          border-bottom-right-radius: 10px
+          padding: 10px 50px 10px 50px
+          max-width: 1000px
+          font-family: 'roboto', sans-serif
+          font-size: 18px
+          line-height: 1.6
