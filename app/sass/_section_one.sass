@@ -11,6 +11,8 @@
   align-items: center
   padding-top: 25vh
   flex-direction: column
+  @media (max-width: 620px)
+    padding-top: 35vh
   &:after
     content: ''
     position: absolute
@@ -21,7 +23,7 @@
     background-color: rgba(0, 0, 0, .3)
   span
     font-family: 'roboto', sans-serif
-    font-size: calc(25px + .5vw)
+    font-size: calc(15px + 1vw)
     color: rgba(255, 255, 255, 1)
     text-align: center
     z-index: 3

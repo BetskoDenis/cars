@@ -38,6 +38,7 @@ footer
       padding: 10px
       align-items: center
 
+
       img
         height: 280px
         width: 300px
@@ -113,3 +114,31 @@ footer
         background-color: rgba(240, 240, 240, 1)
     .form_button:hover
       box-shadow: none
+.footer
+  height: 80px
+  width: 100%
+  background-color: rgba(35, 37, 44, 1)
+  .footer__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    .footer_left
+      display: flex
+      align-items: center
+      height: 100%
+      a
+        margin-right: 15px
+      p
+        max-width: 200px
+        font-family: 'roboto', sans-serif
+        color: rgba(255, 255, 255, 1)
+        font-size: 18px
+        letter-spacing: 0.8px
+    .footer_right
+      a
+       margin-right: 10px
+       height: 100%
+       &:hover
+         background-color: rgba(40, 40, 40, .5)
+         z-index: 2
