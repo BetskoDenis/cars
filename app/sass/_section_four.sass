@@ -14,6 +14,8 @@
       top: 50%
       left: 20%
       background-color: rgba(240, 240, 240, 1)
+      @media (max-width: 880px)
+        display: none
     &:after
       content: ''
       position: absolute
@@ -25,13 +27,15 @@
       width: 87px
       height: 11px
       z-index: 3
+      @media (max-width: 880px)
+        display: none
   .about__wrapper
-    width: 1170px
+    max-width: 1170px
     display: flex
     flex-wrap: wrap
     justify-content: center
     .section_four_about
-      flex: 1 1 calc(50% - 50px)
+      flex: 1 1 560px
       min-width: 300px
       position: relative
     .section_four_about.left
@@ -42,8 +46,11 @@
       justify-content: center
       margin-right: 50px
       padding: 0 30px
+      @media (max-width: 1250px)
+        margin-right: 0
       .text__wrapper
         position: relative
+        margin-bottom: 20px
         .line
           height: 1px
           position: absolute
@@ -51,6 +58,8 @@
           right: 0
           width: 40%
           background-color: rgba(240, 240, 240, .2)
+          @media (max-width: 880px)
+            display: none
         &:before
           content: ""
           position: absolute
@@ -60,6 +69,7 @@
           left: -5%
           height: 35px
           width: 35px
+
         &:after
           content: ""
           position: absolute
@@ -70,6 +80,9 @@
           left: -5%
           height: 35px
           width: 35px
+          @media (max-width: 1250px)
+            background-image: none
+
 
       h5
         font-size: 25px
@@ -80,6 +93,8 @@
         font-family: 'roboto', sans-serif
         line-height: 1.8
         font-size: 16px
+        @media (max-width: 768px)
+          text-align: center
     .section_four_about.right
       display: flex
       flex-wrap: wrap
@@ -99,7 +114,8 @@
         background-repeat: no-repeat
         background-position: center
         z-index: 5
-
+        @media (max-width: 1250px)
+          background-image: none
       .about_right_item
         display: flex
         margin: 15px

@@ -16,21 +16,19 @@ $(document).ready(function () {
 
     });
     $('.our_works__wrapper').owlCarousel({
-        center: true,
-        margin:10,
+
         loop: true,
-        dots: false,
-        autoplay: false,
         nav: true,
+        margin: 5,
         smartSpeed: 1300,
         responsive:{
             0:{
                 items:1
             },
-            680:{
+            770:{
                 items:2
             },
-            1000:{
+            1150:{
                 items:3
             },
 
@@ -38,4 +36,25 @@ $(document).ready(function () {
 
     });
 
+    function closeForm() {
+        $('.form_head').css('display', 'none')
+    }
+    function openForm() {
+        $('.form_head').css('display', 'flex')
+    }
+    $('.close_button').on('click', function () {
+        closeForm()
+    })
+    $('.form_button').on('click', function () {
+        closeForm()
+    })
+    $('.button').on('click', function () {
+        openForm()
+    })
+    $('.steps_button').on('click', function () {
+        openForm()
+    })
+    $('#form_button').on('click', function () {
+        openForm()
+    })
 })

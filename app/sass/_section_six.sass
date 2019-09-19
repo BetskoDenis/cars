@@ -15,6 +15,8 @@
       top: 50%
       left: 10%
       background-color: rgba(240, 240, 240, 1)
+      @media (max-width: 880px)
+        display: none
     &:after
       content: ''
       position: absolute
@@ -26,6 +28,8 @@
       width: 87px
       height: 11px
       z-index: 3
+      @media (max-width: 880px)
+        display: none
   .carousel__wrapper
     position: relative
     .owl-nav
@@ -38,7 +42,7 @@
         position: absolute
         top: calc(50% - 25px)
         outline: none
-        left: 13%
+        left: 3%
         transition: all .3s
         span
           display: none
@@ -53,7 +57,7 @@
         transform: rotate(45deg)
         position: absolute
         top: calc(50% - 25px)
-        right: -2%
+        right: 0
         outline: none
         transition: all .3s
         span
@@ -70,6 +74,8 @@
         flex: 1 1 320px
         display: flex
         justify-content: flex-end
+        @media (max-width: 880px)
+          justify-content: center
         img
           height: 400px
           width: 369px
@@ -88,8 +94,12 @@
           font-size: 20px
           font-weight: bold
           margin-bottom: 20px
+          @media (max-width: 880px)
+            text-align: center
         p
           font-family: 'roboto', sans-serif
           font-size: 16px
           margin-bottom: 20px
           line-height: 1.6
+          @media (max-width: 880px)
+            text-align: center

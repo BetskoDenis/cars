@@ -10,3 +10,15 @@ header
                 a(href='#') +38 (050) 237-57-85
                 a(href='#') +38 (050) 237-57-85
             button.button Заказать звонок
+.form_head
+    form.form_block(method='post')
+        p Заполните форму
+        input(name='name', placeholder='Ваше Имя', autocomplete="disabled").input
+        input(name='phone', placeholder='Ваш Телефон', autocomplete="disabled").input
+        input(name='email', placeholder='Ваш E-mail', autocomplete="disabled").input
+        .button_input
+            input(type='submit', name='submit', value='Подобрать авто').form_button
+        .close_button
+            span
+
+

@@ -42,14 +42,14 @@ section.section_three
 .line_form
     .container
         .line_form__wrapper
-
             .block_headline_lineform
                 span Заполните форму
                 p и наш менеджер отправит Вам на почту, пошаговою
                     |инструкцию по подбору и покупке авто на аукционе в США.
             form.form_block(method='post')
                 p Получите инструкцию
-                input(name='name', placeholder='Ваше Имя')
-                input(name='phone', placeholder='Ваш Телефон')
-                input(name='email', placeholder='Ваш E-mail')
-                button.form_button Получить
+                input(name='name', placeholder='Ваше Имя', autocomplete="disabled").input
+                input(name='phone', placeholder='Ваш Телефон', autocomplete="disabled").input
+                input(name='email', placeholder='Ваш E-mail', autocomplete="disabled").input
+                .button_input
+                    input(name='submit', type='submit', value='Получить')#form_button

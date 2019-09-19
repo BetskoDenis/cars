@@ -25,6 +25,18 @@
         </div>
       </div>
     </header>
+    <div class="form_head">
+      <form method="post" class="form_block">
+        <p>Заполните форму</p>
+        <input name="name" placeholder="Ваше Имя" autocomplete="disabled" class="input">
+        <input name="phone" placeholder="Ваш Телефон" autocomplete="disabled" class="input">
+        <input name="email" placeholder="Ваш E-mail" autocomplete="disabled" class="input">
+        <div class="button_input">
+          <input type="submit" name="submit" value="Подобрать авто" class="form_button">
+        </div>
+        <div class="close_button"><span></span></div>
+      </form>
+    </div>
     <section class="section_one">
       <h1> Теперь будущее еще доступней!</h1><span>Доставляем автомобили из США под заказ</span><a href="#section_two" class="arr"></a>
     </section>
@@ -137,10 +149,12 @@
           </div>
           <form method="post" class="form_block">
             <p>Получите инструкцию</p>
-            <input name="name" placeholder="Ваше Имя">
-            <input name="phone" placeholder="Ваш Телефон">
-            <input name="email" placeholder="Ваш E-mail">
-            <button class="form_button">Получить</button>
+            <input name="name" placeholder="Ваше Имя" autocomplete="disabled" class="input">
+            <input name="phone" placeholder="Ваш Телефон" autocomplete="disabled" class="input">
+            <input name="email" placeholder="Ваш E-mail" autocomplete="disabled" class="input">
+            <div class="button_input">
+              <input name="submit" type="submit" value="Получить" id="form_button">
+            </div>
           </form>
         </div>
       </div>

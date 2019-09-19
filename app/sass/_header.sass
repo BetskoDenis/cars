@@ -6,7 +6,7 @@ header
   padding: 15px 0
   z-index: 3
   @media (max-width: 620px)
-    height: 100%
+    height: max-content
   .header__wrapper
     display: flex
     justify-content: space-between
@@ -42,7 +42,7 @@ header
         display: flex
         flex-wrap: wrap
         flex-direction: column
-        max-width: 145px
+        max-width: 155px
         margin-right: 20px
         @media (max-width: 620px)
           margin-bottom: 20px
@@ -64,6 +64,7 @@ header
         cursor: pointer
         background-image: linear-gradient(to top, #edf2f8, #fbfdff 66%, #fff)
         border: none
+        outline: none
         &:before
           content: ''
           position: absolute
@@ -74,3 +75,112 @@ header
           right: 25px
         &:hover
           background-image: linear-gradient(to top, #fff, #fbfdff 66%, #edf2f8)
+.form_head
+  position: fixed
+  top: 0
+  height: 100vh
+  width: 100vw
+  background-color: rgba(40, 40, 40, .9)
+  z-index: 100
+  display: none
+  justify-content: center
+  align-items: center
+
+  .form_block
+    background-image: url("../img/form.png")
+    height: 487px
+    width: 489px
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    z-index: 5
+
+    @media (max-width: 550px)
+      background-image: none
+      height: auto
+      width: auto
+      position: relative
+      bottom: 0
+      right: 0
+      padding: 5px
+      border: 1px solid rgba(40, 40, 40, .2)
+      border-radius: 5px
+      background-color: rgba(240, 240, 240, 1)
+    p
+      font-family: 'roboto', sans-serif
+      font-size: 22px
+      font-weight: bold
+      color: rgba(40, 40, 40, 1)
+      letter-spacing: 0.8px
+      margin-bottom: 30px
+    .input
+      font-family: 'roboto', sans-serif
+      border: none
+      border-bottom: 1px solid rgba(40, 40, 40, .8)
+      height: 30px
+      font-size: 20px
+      color: rgba(40, 40, 40, 1)
+      margin-bottom: 30px
+      background-color: rgba(0, 0, 0, 0)
+      padding: 5px 10px
+      outline: none
+    .button_input
+      position: relative
+      .form_button
+          width: 220px
+          padding: 10px 20px 10px 20px
+          border: none
+          background-image: linear-gradient(to top, #f93542, #fe4753)
+          cursor: pointer
+          font-family: 'roboto', sans-serif
+          color: rgba(255, 255, 255, 1)
+          font-size: 20px
+          font-weight: bold
+          box-shadow: 0 20px 30px -15px #eb3e62
+          transition: all .3s
+          position: relative
+          outline: none
+      .form_button:hover
+          box-shadow: none
+      &:after
+        content: ""
+        position: absolute
+        top: calc(50% - 4px)
+        right: 5%
+        height: 9px
+        width: 9px
+        background-color: rgba(240, 240, 240, 1)
+    .close_button
+      height: 50px
+      width: 50px
+      position: absolute
+      top: -5%
+      right: -5%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      @media (max-width: 550px)
+        top: -25%
+        right: -5%
+
+      span
+        width: 50px
+        height: 5px
+        background-color: rgba(240, 240, 240, 1)
+        position: relative
+        transform: rotate(45deg)
+      &:after
+        content: ''
+        position: absolute
+        right: 0
+        left: 0
+        width: 50px
+        height: 5px
+        background-color: rgba(240, 240, 240, 1)
+        transform: rotate(-45deg)
+
