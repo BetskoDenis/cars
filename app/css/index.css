@@ -773,6 +773,11 @@ header {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
+      .line_auction .line_auction__wrapper a img {
+        height: 100px;
+        width: 300px;
+        -o-object-fit: cover;
+           object-fit: cover; }
       .line_auction .line_auction__wrapper a:hover {
         -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
@@ -1312,6 +1317,86 @@ header {
       background-color: #293a48; }
     .section_five .price_wrapper .item_price:nth-child(3) .headline {
       background-color: #1c252e; }
+
+.section_info {
+  background-image: url("../img/future.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 80px 0; }
+  .section_info .info_wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .section_info .info_wrapper .info_item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 50%;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%;
+      min-width: 300px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 20px; }
+      .section_info .info_wrapper .info_item .img_container {
+        max-width: 400px;
+        max-height: 300px; }
+        .section_info .info_wrapper .info_item .img_container img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .section_info .info_wrapper .info_item span {
+        font-family: 'roboto', sans-serif;
+        font-size: 25px;
+        color: #f0f0f0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1.5;
+        position: relative;
+        margin-bottom: 25px; }
+      .section_info .info_wrapper .info_item ol {
+        font-family: 'roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #f0f0f0;
+        line-height: 1.5;
+        position: relative;
+        margin-bottom: 15px;
+        margin-left: 40px; }
+      .section_info .info_wrapper .info_item p, .section_info .info_wrapper .info_item li {
+        font-family: 'roboto', sans-serif;
+        font-size: 16px;
+        color: #f0f0f0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 1.5;
+        position: relative;
+        margin-bottom: 15px;
+        font-weight: normal; }
 
 .section_six {
   background-image: url("../img/reviews.jpg");
